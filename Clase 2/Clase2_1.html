@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Clase 2 JS</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var notaExamen=30+Math.random()*70;
+		var notaDesafio=30+Math.random()*70;
+
+		console.log("Nota examen: "+notaExamen.toFixed(0));
+		console.log("Nota desafío: "+notaDesafio.toFixed(0));
+
+		if (notaExamen>=80) {
+			console.log("Aprobó el examen");
+			if (notaExamen>=90) 
+				console.log("Felicidades");
+		}else
+			console.log("Reprobó el examen");
+
+		if (notaDesafio>=80) {
+			console.log("Aprobó los desafíos");
+		 	if (notaDesafio>=90) 
+				console.log("Felicidades");
+		}else
+			console.log("Reprobó los desafíos");
+
+		if (notaExamen>=80 && notaDesafio>=80) 
+			console.log("Aprobó el curso");
+		else
+			console.log("No aprobó el curso, esfuerzate más...")
+		
+	</script>
+</body>
+</html>

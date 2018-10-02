@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Practica 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		alert("Antes del texto")
+	</script>
+	Antes de script
+	<script type="text/javascript">
+		var nombre=prompt("Diga su nombre: ");
+		console.log(nombre)
+		//si el usuario hace click en el botón
+		//cancelar, prompt retorna null
+		//si el usuario hace click en el botón
+		//aceptar sin escribir nada, prompt retorna
+		//una cadena vacía
+		
+		if (nombre==null || nombre =="") 
+			alert("Debe escribir un valor y aceptar");
+		else
+			if (isNaN(nombre))
+				alert ("No es un número");
+			else
+				alert("Es un número");
+	</script>
+	Luego del script
+</body>
+</html>
