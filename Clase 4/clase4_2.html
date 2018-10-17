@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="setTimeout('cerrar()',8000)" onclick="activar()">
+	<h1>Practica de SetTimeout</h1>
+	<script type="text/javascript">
+		var t1
+		var t2;
+		function preguntar(){
+			if (confirm("Desea extender el tiempo?"))
+				activar();
+		}
+		function activar(){
+			if (t1!=undefined){
+				alert("Se hizo click")
+				window.clearTimeout(t1);
+				window.clearTimeout(t2);
+			}
+			t1=window.setTimeout('cerrar()',10000)
+			t2=window.setTimeout('preguntar()',5000)
+		}
+		function cerrar(){
+			window.alert("Se acabo el tiempo")
+			window.close()
+		}
+	</script>
+
+</body>
+</html>
